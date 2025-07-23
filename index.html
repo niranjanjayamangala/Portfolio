@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayamangala Niranjan Babu | Web Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0f;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00d4ff, #9945ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #1a1a2e;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #b4b4b4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      background: linear-gradient(135deg, #00d4ff, #9945ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .card, .project-card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #00d4ff, #9945ff);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #1a1a2e;
+      font-size: 0.9rem;
+      color: #b4b4b4;
+    }
+
+    ul.contact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.contact-list li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jayamangala Niranjan Babu</h1>
+    <p class="subtitle">Web Developer</p>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm Jayamangala Niranjan Babu, a passionate web developer with expertise in frontend and backend development, cloud technologies, and modern programming languages. I build scalable, secure, and user-centric applications that solve real-world problems.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>ReactJS, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <p>MongoDB, Node.js</p>
+      </div>
+      <div class="card">
+        <h3>Coding Languages</h3>
+        <p>Java, Python</p>
+      </div>
+      <div class="card">
+        <h3>Cloud</h3>
+        <p>AWS</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Auto Scaling with Load Balancer</h3>
+      <p>
+        Auto Scaling with a load balancer automatically adjusts the number of server instances based on demand. The load balancer distributes traffic across instances to ensure performance and high availability.
+      </p>
+      <p><strong>Tech:</strong> AWS (EC2, Load Balancer, Auto Scaling Group)</p>
+      <a href="https://github.com/niranjanjayamangala/Auto-Scaling-with-Load-Balancer" class="btn-primary" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Kisaan Mart</h3>
+      <p>
+        Kisaan Mart is a direct farmer-to-customer marketplace that eliminates intermediaries. Farmers can sell directly to customers, ensuring fair pricing and transparency.
+      </p>
+      <p><strong>Tech:</strong> MERN Stack (MongoDB, Express.js, React, Node.js)</p>
+      <a href="https://github.com/niranjanjayamangala/Kisaan-Mart" class="btn-primary" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="resume" class="container">
+    <h2>Resume</h2>
+    <p>Download my resume to explore more about my technical background and experience.</p>
+    <a href="niranjan final resume.pdf" class="btn-primary" download>📄 Download Resume (PDF)</a>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><strong>Email:</strong> <a href="mailto:jayamangalaniranjanbabu@gmail.com">jayamangalaniranjanbabu@gmail.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+917093254488">+91 7093254488</a></li>
+      <li><strong>Location:</strong> Kaikalur, Andhra Pradesh, India</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/niranjanjayamangala" target="_blank">github.com/niranjanjayamangala</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/niranjan-jayamangala" target="_blank">linkedin.com/in/niranjan-jayamangala</a></li>
+      <li><strong>Twitter:</strong> <a href="https://x.com/NiranjanbabuJa3" target="_blank">@NiranjanbabuJa3</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jayamangala Niranjan Babu. Built with code and creativity.</p>
+  </footer>
+
+</body>
+</html>
